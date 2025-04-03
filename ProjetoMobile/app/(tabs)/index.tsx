@@ -8,10 +8,10 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#FF0000', dark: '#FF0000' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+          source={require('@/assets/images/exploreimagem.png')}
           style={styles.reactLogo}
         />
       }>
@@ -20,33 +20,33 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Filmes</ThemedText>
+        <ThemedText type="subtitle">O que são plataformas digitais?</ThemedText>
         <ThemedText>
-        Chamamos de filme um espetáculo de imagens em movimento (mais tarde acompanhadas por som), <ThemedText type="defaultSemiBold">FILMES </ThemedText> são formados por uma ou mais cenas, que tem começo, meio e fim, e 
+        Plataformas digitais são <ThemedText type="defaultSemiBold"> </ThemedText> 
           <ThemedText type="defaultSemiBold">
             {Platform.select({
               ios: 'cmd + d',
               android: 'cmd + m',
-              web: '“mostra”'
+              web: 'ambientes virtuais'
             })}
           </ThemedText>{' '}
-          alguma coisa acontecendo numa sucessão temporal.
+          com serviços que transmitem conteúdo audiovisual pela internet, como filmes, séries, novelas, jogos e músicas. Elas funcionam a partir de um servidor na nuvem que armazena o conteúdo.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">Quais são as plataformas de streaming mais utilizadas?</ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+          Entre as mídias digitais mais utilizadas para assistir filmes, séries e animações estão a Prime vídeo,  Disney plus, Globoplay, HBO Max, Looke, Netflix, Paramout+, MUBI, Apple TV plus, Telecine Play, Star Plus e  Crunchyroll. Essas são as 12 melhores streamings de filmes e séries!
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Top 5 filmes, séries e animações mais assistidas do mundo. </ThemedText>
         <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          {' '}
+          <ThemedText type="defaultSemiBold">Top 5 filmes mais assistidos: </ThemedText> Avatar, Vingadores Ultimato, Avatar O Caminho da Água, Titanic, Star Wars O Despertar da Força. {' '}
+          <ThemedText type="defaultSemiBold">Top 5 séries mais assistidas: </ThemedText>Game of Thrones, Breaking Bad, Stranger Things, The Crown e The Office. {' '}
+          <ThemedText type="defaultSemiBold">Top 5 animações mais assistidas: </ThemedText> Divertida Mente 2, Frozen 2, Frozen, Os Incríveis 2,Toy Story 4.{' '}
+          <ThemedText type="defaultSemiBold"></ThemedText>
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   reactLogo: {
     height: 178,
-    width: 290,
+    width: 220,
     bottom: 0,
     left: 0,
     position: 'absolute',

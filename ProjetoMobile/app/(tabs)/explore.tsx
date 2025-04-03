@@ -1,5 +1,6 @@
 import { StyleSheet, Image, Platform } from 'react-native';
 
+
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -7,31 +8,32 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 
+
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+      headerBackgroundColor={{ light: '#FF0000', dark: '#FF0000' }}
       headerImage={
         <IconSymbol
           size={310}
-          color="#808080"
+          color="#FF0000"
           name="chevron.left.forwardslash.chevron.right"
           style={styles.headerImage}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText type="title">O que veremos neste site?</ThemedText>
       </ThemedView>
-      <ThemedText>Neste site irá conter explicações voltados a filmes, séires, animações, seus devidos personagens, sobre as indústrias cinematográficas e alguns atores que são referência neste ramo! </ThemedText>
+      <ThemedText>Este site irá descrever um pouco sobre o que são, como são e como funcionam os famosos Filmes, Séries, Desenhos animados, alguns de seus personagens e sobre a indústria cinematográfica! </ThemedText>
       <Collapsible title="Filmes">
         <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+        Chamamos de filme um espetáculo de imagens em movimento (mais tarde acompanhadas por som), são formados por uma ou mais cenas, que tem começo, meio e fim, e {' '}
+          <ThemedText type="defaultSemiBold">“mostra"</ThemedText> alguma coisa acontecendo numa sucessão temporal{' '}
+          <ThemedText type="defaultSemiBold">.</ThemedText>
         </ThemedText>
         <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
+          Entre os filmes há diversas categorias: <ThemedText type="defaultSemiBold">romance, ficção científica, terror, suspense,</ThemedText>{' '}
+          entre outros, todos eles constorem o que chamamos de filme.
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/router/introduction">
           <ThemedText type="link">Learn more</ThemedText>
@@ -39,37 +41,37 @@ export default function TabTwoScreen() {
       </Collapsible>
       <Collapsible title="Séries">
         <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
+          {' '}
+          <ThemedText type="defaultSemiBold">Série </ThemedText>de televisão é um programa de TV ou online com capítulos, chamados episódios, que são agrupados por temporadas. Já as plataformas digitais são soluções tecnológicas que permitem o acesso a serviços e conteúdo online.
         </ThemedText>
       </Collapsible>
       <Collapsible title="Animações">
         <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
+           <ThemedText type="defaultSemiBold">Animação </ThemedText> é uma arte que dá vida a imagens, objetos ou desenhos inanimados, fazendo-os parecerem se mover, ou seja, animação é o ato de “dar vida” a objetos estáticos e inanimados através de diferentes métodos. {' '}
+          <ThemedText type="defaultSemiBold"></ThemedText>
+         
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+        <Image source={require('@/assets/images/camera.png')} style={{ alignSelf: 'center' }} />
         <ExternalLink href="https://reactnative.dev/docs/images">
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
       <Collapsible title="Personagens">
         <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
+           <ThemedText type="defaultSemiBold">Personagens</ThemedText> são figuras que atuam em uma narrativa, podendo ser pessoas, animais, objetos ou humanóides. Eles podem ser reais ou fictícios. {' '}
           <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
+          Os personagens são uma parte fundamental da narrativa e desempenham um papel crucial na trama. São definidos pelas ações que tomam, pelas coisas que falam ou pela relevância que têm.
           </ThemedText>
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Empresas">
+      <Collapsible title="Indústria Cinematográfica">
         <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
+          A {' '}
+          <ThemedText type="defaultSemiBold">Indústria Cinematrográfica ()</ThemedText>
+          é o conjunto de empresas que se envolvem na produção de filmes, séries, vídeos e outros meios audiovisuais. A indústria cinematográfica é uma atividade artístico-industrial que se caracteriza por transformações frequentes. O seu impacto social, econômico e cultural é cada vez mais complexo.
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
           <ThemedText type="link">Learn more</ThemedText>
@@ -77,16 +79,16 @@ export default function TabTwoScreen() {
       </Collapsible>
       <Collapsible title="Atores">
         <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
+          {' '}
+          <ThemedText type="defaultSemiBold">Atores </ThemedText>são artistas que interpretam personagens em obras de teatro, cinema, televisão e publicidade. Eles estudam roteiros, trabalham com diretores e outros atores, e se dedicam à psicologia de seus personagens.
+          São referência no ramso os atores  <ThemedText type="defaultSemiBold">Leonardo DiCaprio, Johnny Depp, Robert Downey Jr, Tom Cruise, Brad Pitt, Will Smith, Jennifer Aniston, Adam Sandler, Margot Robbie, Ryan Gosling, </ThemedText>{' '}
+          entre outros famosos de Hollywood.
         </ThemedText>
         {Platform.select({
           ios: (
             <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
+               <ThemedText type="defaultSemiBold"></ThemedText>{' '}
+             
             </ThemedText>
           ),
         })}
@@ -95,9 +97,10 @@ export default function TabTwoScreen() {
   );
 }
 
+
 const styles = StyleSheet.create({
   headerImage: {
-    color: '#808080',
+    color: '#8B0000',
     bottom: -90,
     left: -35,
     position: 'absolute',
