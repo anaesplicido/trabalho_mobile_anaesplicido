@@ -13,3 +13,5 @@ Tecnologias Utilizadas
   
 Objetivo
 O projeto tem como objetivo não só entreter, mas também informar os usuários sobre o que está acontecendo no mundo do cinema e da TV, com uma interface moderna, fluida e otimizada para qualquer tipo de dispositivo móvel.
+
+![image](https://github.com/user-attachments/assets/65c5df2d-7b9a-4973-a016-a66ccf3e014e)
