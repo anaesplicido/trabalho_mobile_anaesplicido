@@ -1,4 +1,8 @@
+Site Mobile sobre Filmes, Séries e Animações!
 
+Bem vindo ao site que fala sobre temas interessantes na atualidade como filomes e séries!
+
+Neste site, exploramos como a indústria cinematográfica pode ser tanto interessante quanto complexa, garantindo entretenimento, relaxamento, aprendizado, e até mesmo uma forma de lidar com emoções.
 
 Funcionalidades
 * Listagens de filmes, séries e animações por estúdio ou gênero
