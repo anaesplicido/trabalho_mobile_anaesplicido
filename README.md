@@ -14,4 +14,9 @@ Tecnologias Utilizadas
 Objetivo
 O projeto tem como objetivo não só entreter, mas também informar os usuários sobre o que está acontecendo no mundo do cinema e da TV, com uma interface moderna, fluida e otimizada para qualquer tipo de dispositivo móvel.
 
-![image](https://github.com/user-attachments/assets/65c5df2d-7b9a-4973-a016-a66ccf3e014e)
+
+
+![image](https://github.com/user-attachments/assets/c7618b74-4c47-4876-a236-15e07dc1701c)  ![image](https://github.com/user-attachments/assets/435fdb3c-758d-47d7-971f-68f200fd5a34)
+
+Esta é a página inicial no site, mostrando o que são plataformas digitais, quais são as plataformas de streaming mais utilizadas e por último o top 5 de cada tópico escrito no site.
+
